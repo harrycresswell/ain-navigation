@@ -1,0 +1,163 @@
+// Global namespace for nav component
+$nav-namespace: "c-nav" !default;
+
+.#{$nav-namespace} {
+	font-size: $font-size--s;
+	padding-left: 0;
+	margin-left: 0;
+	list-style-type: none;
+	width: 100%;
+	min-height: 74px;
+
+	&__logo {
+		background-image: url(../images/ain-logo-dark-with-blue-icon-e880b785.png);
+		background-repeat: no-repeat;
+	}
+
+	&__icon {
+		background-image: url(../images/icon-ain-dark-blue-a53d3b2f.png);
+		background-repeat: no-repeat;
+	}
+
+	@media
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+			/* Retina-specific stuff here */
+
+		&__logo {
+			background-image: url(../images/ain-logo-dark-with-blue-icon@2x-82707f60.png);
+			background-size: 147px 49px;
+			background-repeat: no-repeat;
+			display: block;
+			width: 147px;
+			height: 49px;
+			margin: 12px;
+		}
+
+		&__icon {
+			background-image: url(../images/icon-ain-dark-blue@2x-a8d3a6bb.png);
+			background-size: 47px 47px;
+			background-repeat: no-repeat;
+			display: block;
+			width: 47px;
+			height: 47px;
+			margin: 13px;
+		}
+
+	}
+
+	&__network {
+		font-size: 12px;
+		padding: 1.5rem;
+	}
+
+	&__items {
+		margin: 0 1rem;
+	}
+
+	//Remove all nav items until breakpoint hits tablet
+	@include until($small-screen) {
+	  .c-nav__item {
+	    display: none;
+	  }
+	 }
+
+	&__item {
+		display: inline-block;
+	}
+
+	&__link {
+		color: $gray-dark;
+		display: inline-block;
+		padding: 1rem;
+		text-decoration: none;
+
+		&:hover {
+			color: $gray-dark;
+		}
+
+		&.active {
+			color: $gray-dark;
+		}
+	}
+
+	&__button {
+		border: solid 2px #CDD3D9;
+		background-color: $color-white;
+		padding: 0.5rem 2rem;
+		border-radius: 4px;
+		text-decoration: none;
+		vertical-align: middle;
+	}
+}
+
+//Remove text links until breakpoint hits larger screen
+@include until($large-screen) {
+  .c-nav__link-text {
+    display: none;
+  }
+ }
+
+// nav alignment
+.c-nav__left {
+	border-right: solid 1px #DFE9F2;
+}
+
+.c-nav__right {
+	border-left: solid 1px #DFE9F2;
+}
+
+// search
+.c-nav__search {
+	outline: none;
+	border: 0;
+	padding: 1.5rem 0.5rem;
+}
+
+
+// mobile navigation
+.dropdown-menu {
+	padding: 0rem 0;
+	list-style: none;
+}
+
+//Remove text links until breakpoint hits larger screen
+@include at-least($small-screen) {
+  .dropdown-menu  {
+    display: none;
+  }
+ }
+
+.dropdown-menu__link {
+	padding: 1.5rem;
+	text-decoration: none;
+	display: inline-block;
+}
+
+// dropdown content
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $color-white;
+  min-width: 260px;
+	right: 0;
+  border: solid 1px #DFE9F2;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #F6F9FB}
+
+.c-nav__item:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-menu__item:hover .dropdown-content {
+    display: block;
+}

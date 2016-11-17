@@ -1,0 +1,11 @@
+// Global namespace for header component
+$hero-namespace: "c-hero" !default;
+
+.#{$hero-namespace} {
+  margin: 40px;
+
+	&__title {
+		text-decoration: none;
+	}
+
+}
