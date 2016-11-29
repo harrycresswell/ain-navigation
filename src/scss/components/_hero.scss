@@ -2,7 +2,8 @@
 $hero-namespace: "c-hero" !default;
 
 .#{$hero-namespace} {
-  margin: 40px;
+  background: #DFE9F2;
+  min-height: 240px;
 
 	&__title {
 		text-decoration: none;
