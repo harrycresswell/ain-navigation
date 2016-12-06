@@ -5,3 +5,28 @@
 .u-pull-right {
   float: right !important;
 }
+
+// Clearfix
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.cf {
+    *zoom: 1;
+    content: "";
+    clear: both;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
