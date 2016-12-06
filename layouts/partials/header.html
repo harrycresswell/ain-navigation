@@ -4,7 +4,7 @@
     <title>{{ .Title }}</title>
     <meta charset="UTF-8">
     <meta name="description" content="{{ .Description }}">
-    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "main.css" }}" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/{{ index .Site.Data.css.hash "main.css" }}" />
 
     <link href="https://file.myfontastic.com/3YKSTYgC7rbbTeteDkDwbY/icons.css" rel="stylesheet">
 </head>
