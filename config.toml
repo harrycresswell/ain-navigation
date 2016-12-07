@@ -1,5 +1,14 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "/"
 title = "My New Hugo Site"
 languageCode = "en-us"
- 
+
 pygmentsuseclasses = true
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+
+[permalinks]
+    projects = "/:year/:month/:day/:title/"
+    articles = "/:year/:month/:day/:title/"
+    page = "/:title/"
