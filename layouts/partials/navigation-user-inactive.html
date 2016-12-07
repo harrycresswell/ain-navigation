@@ -1,8 +1,11 @@
 <header class="c-header c-header-wrap">
 
   <nav role="navigation" class="c-nav c-nav--primary">
-    <div class="c-nav__left u-pull-left">
+    <div class="u-pull-left">
         <a class="c-nav__logo" href="#"></a>
+    </div>
+    <div class="c-nav__network u-pull-left">
+        Country: <a href="#">United Kingdom</a>
     </div>
 
     <div class="c-nav__right u-pull-right">
@@ -12,7 +15,9 @@
           <li class="c-nav__item"><a class="c-nav__link" href="#"><span class="c-nav__link-text">Help</span><i class="c-icon icon-help"></i></a>{{ partial "dropdown-content-help.html" . }}</li>
           <li class="c-nav__item"><a class="c-nav__link" href="#">Log In</a></li>
           <li class="c-nav__item"><a class="c-nav__button" href="#">Sign Up</a></li>
-          <li class="c-nav__item"><a class="c-nav__link" href="#"><div class="c-icon-network c-icon-united-kingdom"></div></a></li>
+        </ul>
+        <ul class="dropdown-menu">
+          <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Menu</a>{{ partial "dropdown-content-mobile-user-inactive.html" . }}</li>
         </ul>
     </div>
   </nav>
