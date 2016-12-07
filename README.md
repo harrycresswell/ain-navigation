@@ -1,8 +1,11 @@
-# hugo-gulp
-This is the source code for hugo-gulp starter project :)
+# AIN Navigation
+
+Version 1.0
+
+A new navigation prototype made for AIN built on top of [Hugo](https://gohugo.io/).
 
 ## Getting started
-If you want to grab a copy to get going with your projects follow the boelow setup.
+If you want to grab a copy follow the below setup.
 
 ### Install pre-requisites
 
@@ -16,18 +19,12 @@ If you want to grab a copy to get going with your projects follow the boelow set
 
 ```
 git clone https://github.com/harrycresswell/hugo-gulp.git
-cd hugo-gulp
+cd ain-navigation
 ```
 - Then run `npm install` to install node dependencies
-- Run `gulp` to start a local server and build `_site` in development mode
-- for a production ready build run `gulp prod`
-the site is now ready for deployment
-
-### Adding content
-- `hugo new articles/ARTICLE-NAME.md`
 
 ### Compile the site
-- run `hugo --verbose`
+- In a new shell tab run `hugo --verbose`
 
 ### Start the server
 - run `hugo server --watch --verbose` or `hugo server -wv` to start the server, then navigate to http://localhost:1313/
@@ -41,5 +38,3 @@ rm -rf public
 hugo
 gulp
 ```
-
-**Props to [Dan Bahrami](http://danbahrami.io/articles/building-a-production-website-with-hugo-and-gulp-js/) for getting me started with a great Hugo-gulp workflow**
