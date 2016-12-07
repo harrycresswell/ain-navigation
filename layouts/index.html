@@ -1,12 +1,14 @@
 {{ partial "header.html" . }}
 
 <!-- uncomment partial below for inactive user nav -->
-<!--{{ partial "navigation-user-inactive-alternate.html" . }}-->
-{{ partial "navigation-user-active.html" . }}
+{{ partial "navigation-user-inactive.html" . }}
+<!--{{ partial "navigation-user-active.html" . }}-->
 
 <main>
     <div class="c-hero">
-
+      {{ range .Site.Menus.main }}
+        <a class="u-link--natural" href="{{ .URL }}">Show me how it looks when a user is active</a>
+      {{ end }}
     </div>
 </main>
 
