@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+<!-- uncomment partial below for inactive user nav -->
+{{ partial "navigation-user-active.html" . }}
+
+<main>
+    <div class="c-hero">
+      {{ range .Site.Menus.main }}
+        <a class="u-link--natural" href="/">Show me how it looks when a user is inactive</a>
+      {{ end }}
+<br/><br/>
+  Resize the browser to see how the navigation responds. Note: The dropdowns also change.
+    </div>
+</main>
+
+{{ partial "footer.html" . }}
