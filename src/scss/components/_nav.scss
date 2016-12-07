@@ -66,6 +66,12 @@ $nav-namespace: "c-nav" !default;
 		padding: 1.5rem;
 	}
 
+	@include until($small-screen) {
+		&__network {
+			display: none;
+		}
+	}
+
 	&__items {
 		margin: 0 0 0 1rem;
 	}
@@ -125,6 +131,7 @@ $nav-namespace: "c-nav" !default;
 		border-radius: 4px;
 		text-decoration: none;
 		vertical-align: middle;
+		margin-right: 20px;
 	}
 }
 
@@ -165,6 +172,7 @@ $nav-namespace: "c-nav" !default;
 
 .nudges {
 	padding: 12px;
+
 }
 
 .nudges-count {
