@@ -1,13 +1,16 @@
-baseurl = "/"
+# Set baseurl to "/" when in development mode
+baseurl = "http://harrycresswell.com/client/ain/ain-navigation/"
 title = "My New Hugo Site"
 languageCode = "en-us"
 
 pygmentsuseclasses = true
 
+# Main menu items
 [[menu.main]]
     name = "About"
     url = "/about/"
 
+# Permalink settings
 [permalinks]
     projects = "/:year/:month/:day/:title/"
     articles = "/:year/:month/:day/:title/"
