@@ -1,11 +1,11 @@
 # AIN Navigation
 
-Version 1.0
+*Version 1.0*
 
 A new navigation prototype made for AIN built on top of [Hugo](https://gohugo.io/).
 
 ## Getting started
-If you want to grab a copy follow the below setup.
+If you want to grab a copy follow the setup below.
 
 ### Install pre-requisites
 
@@ -18,7 +18,7 @@ If you want to grab a copy follow the below setup.
 ## Usage
 
 ```
-git clone https://github.com/harrycresswell/hugo-gulp.git
+git clone https://github.com/harrycresswell/ain-navigation.git
 cd ain-navigation
 ```
 - Then run `npm install` to install node dependencies
