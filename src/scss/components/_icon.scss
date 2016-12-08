@@ -1,7 +1,4 @@
-// Global namespace for nav component
-$icon-namespace: "c-icon" !default;
-
-.#{$icon-namespace} {
+.c-icon {
   font-size: 30px;
   margin-left: 10px;
 	vertical-align: middle;
