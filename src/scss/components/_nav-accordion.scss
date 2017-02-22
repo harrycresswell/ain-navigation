@@ -21,14 +21,6 @@ Component: Navigation – accordion
 		border-bottom: solid 1px #D8E2EC;
 }
 
-label.no-border-top {
-		border-top: none;
-}
-
-label.no-border-bottom {
-	border-bottom: none;
-}
-
 a.top-level {
 	padding: 0;
 	color: $gray-darker;
@@ -51,17 +43,24 @@ a.top-level:hover {
     background: #fff;
     height: 30px;
     line-height: 21px;
-		border-bottom: solid 1px #D8E2EC;
+}
+
+label.no-border-top {
+		border-top: none;
+}
+
+label.no-border-bottom {
+	  border-bottom: none;
 }
 
 .i-chevron-down {
-	content: '';
-	position: absolute;
-	width: 8px;
-	height: 4px;
-  right: 18px;
-  top: 30px;
-	background: transparent url(../images/arrow_down-e4febe09.png) no-repeat center center;
+  	content: '';
+  	position: absolute;
+  	width: 8px;
+  	height: 4px;
+    right: 18px;
+    top: 30px;
+  	background: transparent url(../images/arrow_down-e4febe09.png) no-repeat center center;
 }
 
 @media
